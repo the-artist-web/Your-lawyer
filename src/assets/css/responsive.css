@@ -1,0 +1,131 @@
+/**
+ * fit size: 768px
+ */
+@media screen and (min-width: 768px) {
+    /* STYLE GUIDE */
+    :root {
+        --fs-display-large: 3.5rem;
+        --fs-display-medium: 3.6rem;
+        --fs-display-small: 3rem;
+        --fs-headline-small: 2rem;
+    }
+
+    /* COMPONENTS */
+
+    /**
+     * CARDS
+     */
+    .card-customer h2 { 
+        line-height: 3rem;
+        font-size: 30px; 
+    }
+
+    .card-customer .card-content h3 { font-size: 24px; }
+
+    /* SECTION CUSTOMER */
+    .customer .customer-body .customer-slider .customer-container { padding: 50px 60px; }
+
+    /* SECTION BLOG */
+    .window .card-window { padding: 50px 70px; }
+
+    .window .card-window .window-title { 
+        font-size: 35px; 
+        line-height: 2.7rem;
+    }
+}
+
+/**
+ * fit size: 992px
+ */
+@media screen and (min-width: 992px) {
+    /* STYLE GUIDE */
+    :root { 
+        --fs-display-large: 4rem; 
+        --fs-headline-small: 2.8rem;
+    }
+
+    /**
+     * NAVBAR
+     */
+    .navbar { height: 100px; }
+
+    .navbar .logo {
+        padding: 20px;
+        min-height: 100px;
+        max-height: 100px;
+        min-width: 179px;
+        max-width: 179px;
+    }
+
+    .navbar .btn-icon { padding-inline: 30px; }
+
+    .navbar .btn-bars {
+        font-size: 2.3rem;
+        min-width: 90px;
+        min-height: 100px;
+    }
+
+    /**
+     * HOME
+     */
+    .home .container .home-content { padding: 150px 0 100px; }
+}
+
+/**
+ * fit size: 1170px
+ */
+@media screen and (min-width: 1170px) {
+    /* STYLE GUIDE */
+    :root {
+        --fs-display-large: 4.5rem;
+        --fs-display-medium: 4.5rem;
+    }
+
+    /**
+     * NAVBAR
+     */
+    .navbar { height: 100px; }
+
+    .navbar .logo {
+        min-height: 93px;
+        max-height: 93px;
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    /**
+     * HOME
+     */
+    .home .container .home-content { padding: 277px 0 178px; }
+
+    .home .container .home-content .text { width: 670px; }
+
+    .home .container .img-hero {
+        position: absolute;
+        bottom: 0;
+        min-width: 500px;
+        min-height: 750px;
+        max-width: 500px;
+        max-height: 750px;
+    }
+
+    /**
+     * SECTION HELP
+     */
+    .help .container .help-content { padding-inline-end: 70px; }
+
+    /* SECTION AREAS */
+    .contact-areas .form-card {
+        background-color: #ffffff;
+        padding: 48px 40px 45px;
+        margin-inline-start: 70px;
+    }
+
+    /* FOOTER */
+    .footer .footer-top { padding: 73px 0 47px 80px; }
+
+    .footer-center .img-footer { 
+        width: 100%; 
+        margin-block-end: 30px;
+    }
+}

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="icon" href="https://templates.maizny.com/muhamik/assets/images/logo/icon.png" />
+        <!-- meta tags -->
+        <title>مــحامــيــك</title>
+        <meta name="title" content="مــحامــيــك" />
+        <meta name="description" content="أنا محامي بخبرة عميقة في ميدان القانون،
+        ملتزم بالدفاع عن حقوق عملائي وتقديم أفضل الاستشارات القانونية.
+        أسعى دائمًا لتحقيق العدالة وضمان تحقيق المصالح الأمثل للمتضررين.
+        في كل قضية أتعامل معها، أقدم حلاً قانونيًا موثوقًا يستند إلى أسس قوية.
+        تتميز خدماتي بالدقة والاحترافية، مع التركيز على تقديم النتائج المثلى." />
+        <meta name="keywords" content="Html, Css, Js, Bootstrap" />
+        <meta name="author" content="the artist web" />
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet" />
+        <!-- custom cdnjs link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom aos css link -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- custom bootstrap min css link -->
+        <link rel="stylesheet" href="./src/assets/bootstrap/bootstrap.min.css" />
+        <!-- custom css link -->
+        <link rel="stylesheet" href="./src/assets/css/styles.css" />
+        <link rel="stylesheet" href="./src/assets/css/responsive.css" />
+    </head>
+    <body id="up">
+        <!-- START LOAD -->
+        <div class="start-load bg-bg d-flex align-items-center justify-content-center position-fixed top-0 left-0 right-0 bottom-0 z-3 w-100" data-start-load>
+            <div class="animation-load position-relative d-inline-block">
+                <span class="bg-main rounded-pill position-absolute"></span>
+                <span class="bg-main rounded-pill position-absolute"></span>
+                <span class="bg-main rounded-pill position-absolute"></span>
+                <span class="bg-main rounded-pill position-absolute"></span>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar d-flex flex-nowrap py-0 px-3 position-absolute top-0 right-0 left-0 z-2 w-100" data-navbar>
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center bg-second-bg">
+                <img 
+                    src="https://templates.maizny.com/muhamik/assets/images/logo/logo-2.png" 
+                    alt="مــحامــيــك" 
+                    loading="lazy"
+                    class="img-logo img-cover"
+                />
+            </a>
+
+            <ul class="navbar-list d-none d-xl-flex align-items-center my-0 me-auto w-100">
+                <li>
+                    <a href="#" class="navbar-link active label-small">الرئيسية</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-link label-small">من أنا</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-link label-small">خدماتي</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-link label-small">المدونة</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-link label-small">إتصل بنا</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+                <a href="#" type="button" class="btn btn-one text-nowrap d-none d-lg-flex label-small">
+                    إستشارة مجانية
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <button type="button" class="btn btn-icon border-0 label-small" data-bs-target="#searchbar" data-bs-toggle="modal">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button type="button" class="btn btn-bars border-bottom-0 broder-top-0 rounded-0 p-0 d-flex align-items-center justify-content-center d-xl-none" data-bs-target="#aside-list" data-bs-toggle="offcanvas">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <button type="button" class="btn btn-bars border-bottom-0 broder-top-0 rounded-0 p-0 d-none align-items-center justify-content-center d-none d-xl-flex" data-bs-target="#aside-me" data-bs-toggle="offcanvas">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- SEARCHBAR -->
+        <div class="searchbar modal fade" id="searchbar">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="d-flex align-items-center justify-content-between position-relative">
+                        <input 
+                            type="text" 
+                            name="searchbar"
+                            placeholder="إبحث هنا..."
+                            class="input-searchbar label-small"
+                        />
+                        <i class="fa-solid fa-magnifying-glass || position-absolute"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ASIDE -->
+        <div class="aside offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="aside-list">
+            <button type="button" class="btn btn-aside-close p-0 rounded-0 position-absolute top-0 right-0 w-auto title-medium" data-bs-dismiss="offcanvas">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <ul class="aside-list m-0 d-flex flex-column">
+                <li>
+                    <a href="#" class="aside-link label-small">الرئيسية</a>
+                </li>
+
+                <li>
+                    <a href="#" class="aside-link label-small">من أنا</a>
+                </li>
+
+                <li>
+                    <a href="#" class="aside-link label-small">خدماتي</a>
+                </li>
+
+                <li>
+                    <a href="#" class="aside-link label-small">المدونة</a>
+                </li>
+
+                <li>
+                    <a href="#" class="aside-link label-small">إتصل بنا</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ASIDE ME -->
+        <div class="aside-me offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="aside-me">
+            <button type="button" class="btn btn-aside-close border-0 p-0 rounded-0 position-absolute w-auto title-medium" data-bs-dismiss="offcanvas">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="d-flex flex-column gap-5">
+                <a href="index.html" class="logo">
+                    <img 
+                        src="https://templates.maizny.com/muhamik/assets/images/logo/logo-1.png" 
+                        alt="مــحامــيــك" 
+                        loading="lazy"
+                        class="img-logo img-cover"
+                    />
+                </a>
+
+                <div class="about-content">
+                    <h2 class="title label-medium">من أنا</h2>
+
+                    <p class="text-second label-small">محامي سعودي ذو خبرة واحترافية عالية في ميدان القانون. ملتزم بتقديم الاستشارات والحلول القانونية الفعالة. نهدف إلى حماية حقوق العملاء وضمان تحقيق العدالة. نقدم خدماتنا بموجب أعلى المعايير المهنية والأخلاقية.</p>
+                </div>
+
+                <div class="contact-me">
+                    <h2 class="title label-medium">إتصل بي</h2>
+
+                    <ul class="contact-list d-flex flex-column p-0 m-0">
+                        <li class="d-flex align-items-center justify-content-between gap-3">
+                            <p class="text-second label-small">شارع الملك فهد - الرياض - السعودية</p>
+                            
+                            <i class="fa-solid fa-location-dot"></i>
+                        </li>
+
+                        <li class="d-flex align-items-center justify-content-between gap-3">
+                            <p class="text-second label-small">name@domainname.com</p>
+                            
+                            <i class="fa-solid fa-envelope-open"></i>
+                        </li>
+
+                        <li class="d-flex align-items-center justify-content-between gap-3">
+                            <p class="text-second label-small">+966123456789</p>
+                            
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="video modal fade" id="video">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="btn btn-close-video p-0 broder-0 position-absolute text-second title-medium" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <iframe 
+                        class="video-iframe" 
+                        src="//www.youtube.com/embed/3gf0XbOEN40?autoplay=1" 
+                        frameborder="0" 
+                        allowfullscreen="" 
+                        __idm_id__="1564674"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+            <article>
+                <!-- HOME -->
+                <section class="home position-relative">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-12 col-xl-7">
+                                <div class="home-content d-flex flex-column justify-content-center">
+                                    <h2 class="address animation-up title-medium">حياك الله في موقعي</h2>
+                                    <h1 class="title-home animation-down display-large">محامي سعودي<br /> متخصص بخبرة <br />واسعة</h1>
+                                    <p class="text label-small">محامي سعودي يجمع بين الخبرة والاحترافية في مجال القانون, متخصص في تقديم استشارات قانونية موثوقة وفعالة, نضمن الدفاع الشامل وحماية حقوق العملاء بأعلى معايير الجودة.</p>
+                                    <p class="text-down d-flex align-items-center gap-1 label-small">
+                                        <i class="fa-solid fa-star || text-main"></i>
+                                        25 سنة خبرة في الإستشارات القانونية
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-5">
+                                <img 
+                                    src="https://templates.maizny.com/muhamik/assets/images/hero/hero-two-img-1.png" 
+                                    alt="img hero" 
+                                    loading="lazy"
+                                    class="img-hero animation-left d-none d-xl-block img-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION HELP -->
+                <section class="help">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-duration="2000">
+                                <img 
+                                    src="https://templates.maizny.com/muhamik/assets/images/features/features-2.jpg" 
+                                    alt="img help" 
+                                    loading="lazy"
+                                    class="img-help img-cover"
+                                />
+                            </div>
+
+                            <div class="col-12 col-lg-7">
+                                <div class="help-content">
+                                    <p class="sub-title d-flex align-items-center gap-4 label-large" data-aos="fade-up" data-aos-duration="2000">
+                                        <span class="line"></span>
+                                        كيف أساعدك
+                                    </p>
+                                    <h2 class="title-help display-small" data-aos="fade-up" data-aos-duration="2000">عند الطلب, بساعدك في قضايا تنقذ حياتك</h2>
+                                    <p class="text text-second label-small" data-aos="fade-up" data-aos-duration="2000">وقت ما تحتاج، أنا معك أساعدك في هذه القضايا اللي تفرق معك، وأعطيك النصيحة والدعم في الأمور اللي تأثر على حياتك، مو مجرد نصح، أنا هنا للبحث عن الحلول اللي تحافظ على حقوقك وأمانك، وأنت متأكد أني جنبك في الأوقات الصعبة وأنا أدافع عنك بكل قوة.</p>
+    
+                                    <ul class="d-flex flex-column gap-5 p-0 m-0">
+                                        <li class="features-item d-flex align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                                            <i class="fa-solid fa-gavel || text-main text-center display-small"></i>
+                                            
+                                            <div class="d-flex flex-column gap-1">
+                                                <h3 class="title-small">استشارات قانونية</h3>
+                                                <p class="text-second label-small">توجيهك في قضاياك القانونية وإعطائك النصح المناسب</p>
+                                            </div>
+                                        </li>
+    
+                                        <li class="features-item d-flex align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                                            <i class="fa-solid fa-handshake || text-main text-center display-small"></i>
+                                            
+                                            <div class="d-flex flex-column gap-1">
+                                                <h3 class="title-small">تمثيل أمام المحاكم</h3>
+                                                <p class="text-second label-small">الدفاع عن حقوقك ومصالحك أمام الهيئات القضائية</p>
+                                            </div>
+                                        </li>
+    
+                                        <li class="features-item d-flex align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                                            <i class="fa-solid fa-book-open-reader || text-main text-center display-small"></i>
+                                            
+                                            <div class="d-flex flex-column gap-1">
+                                                <h3 class="title-small">وساطة وتحكيم</h3>
+                                                <p class="text-second label-small">حل النزاعات بطرق بديلة لتجنب التقاضي الطويل</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION ABOUT ME -->
+                <section class="about-me">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 g-xl-5">
+                            <div class="col">
+                                <div class="about-content" data-aos="fade-up" data-aos-duration="2000">
+                                    <p class="sub-title d-flex align-items-center gap-4 label-large">
+                                        <span class="line"></span>
+                                        من أنا
+                                    </p>
+                                    <h2 class="title-about display-small">25 سنة خبرة في الإستشارات القانونية</h2>
+                                    <p class="text text-second label-small">أنا محامي بخبرة عميقة في ميدان القانون، ملتزم بالدفاع عن حقوق عملائي وتقديم أفضل الاستشارات القانونية. أسعى دائمًا لتحقيق العدالة وضمان تحقيق المصالح الأمثل للمتضررين. في كل قضية أتعامل معها، أقدم حلاً قانونيًا موثوقًا يستند إلى أسس قوية. تتميز خدماتي بالدقة والاحترافية، مع التركيز على تقديم النتائج المثلى.</p>
+                                    <p class="text-down label-medium">القانون: الدرع الحصين والسيف القاطع</p>
+                                    <a href="#" type="button" class="btn btn-one text-nowrap label-small">
+                                        تعرف على المزيد
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="play-content-img d-flex align-items-center justify-content-center position-relative">
+                                    <button class="btn btn-play rounded-pill border-0 label-medium" data-bs-target="#video" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION AREAS -->
+                <section class="areas position-relative">
+                    <div class="container">
+                        <div class="title-section text-center" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="sub-title d-flex align-items-center justify-content-center gap-4 label-large">
+                                <span class="line"></span>
+                                ايش الي أقدمه لك
+                                <span class="line"></span>
+                            </p>
+                            <h2 class="display-small">مجالات الممارسة القانونية</h2>
+                        </div>
+
+                        <ul class="card-list bg-bg row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 m-0 p-0">
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-areas d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <i class="fa-solid fa-gavel || text-main display-medium"></i>
+
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <h3 class="title-small">القانون الجنائي</h3>
+                                        <p class="text-second label-small">معالجة الجرائم والعقوبات، وتقديم الدفاع الكامل للمتهمين.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-areas d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <i class="fa-brands fa-pagelines || text-main display-medium"></i>
+
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <h3 class="title-small">القانون المدني</h3>
+                                        <p class="text-second label-small">حل النزاعات بين الأفراد وتقديم الاستشارات في قضايا الملكية والعقود.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-areas d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <i class="fa-solid fa-handcuffs || text-main display-medium"></i>
+
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <h3 class="title-small">القانون التجاري</h3>
+                                        <p class="text-second label-small">استشارات في تأسيس وإدارة الشركات وتقديم الدعم في العقود التجارية.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-areas d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <i class="fa-solid fa-road || text-main display-medium"></i>
+
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <h3 class="title-small">قانون العمل</h3>
+                                        <p class="text-second label-small">تقديم النصح والدعم في القضايا المتعلقة بالعلاقات الوظيفية وحقوق العمال.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-areas d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <i class="fa-solid fa-scale-balanced || text-main display-medium"></i>
+
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <h3 class="title-small">قانون الأسرة</h3>
+                                        <p class="text-second label-small">تقديم الاستشارات والدعم في قضايا الزواج، الطلاق، وحضانة الأطفال.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-areas d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <i class="fa-solid fa-building-shield || text-main display-medium"></i>
+
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <h3 class="title-small">قانون العقارات</h3>
+                                        <p class="text-second label-small">مساعدة في قضايا شراء وبيع العقارات، وتقديم الاستشارات في حقوق الملكية.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="contact-areas">
+                    <div class="container">
+                        <div class="row g-4 g-xl-5">
+                            <div class="col-12 col-xl-4">
+                                <ul class="d-flex flex-column p-0 m-0">
+                                    <li class="counter-item d-flex align-items-center justify-content-between" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-users || text-center text-main headline-small"></i>
+
+                                            <h2 class="display-small" data-counter data-target="356">0</h2>
+                                        </div>
+
+                                        <p class="text-second label-small">عملاء راضون</p>
+                                    </li>
+
+                                    <li class="counter-item d-flex align-items-center justify-content-between" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-clipboard-check || text-center text-main headline-small"></i>
+
+                                            <h2 class="display-small" data-counter data-target="754">0</h2>
+                                        </div>
+
+                                        <p class="text-second label-small">قضايا ناجحة</p>
+                                    </li>
+
+                                    <li class="counter-item d-flex align-items-center justify-content-between" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-user-tie || text-center text-main headline-small"></i>
+
+                                            <h2 class="display-small" data-counter data-target="962">0</h2>
+                                        </div>
+
+                                        <p class="text-second label-small">محامي محترف</p>
+                                    </li>
+
+                                    <li class="counter-item d-flex align-items-center justify-content-between mb-4 mb-xl-0" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-medal || text-center text-main headline-small"></i>
+
+                                            <h2 class="display-small" data-counter data-target="287">0</h2>
+                                        </div>
+
+                                        <p class="text-second label-small">جوائز فائزة</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-xl-8" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="form-card">
+                                    <div class="form-title d-flex flex-column gap-2 text-center">
+                                        <h2 class="display-small">استشارات مجانية</h2>
+                                        <p class="text-second label-small">أقدم استشارة قانونية مجانية لمساعدتك في فهم حقوقك وتوجيهك نحو الخطوات الصحيحة، دون أي التزامات مالية.</p>
+                                    </div>
+
+                                    <form action="#" class="form">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="row row-cols-1 row-cols-lg-2 g-3 g-xl-4">
+                                                <div class="col">
+                                                    <input 
+                                                        type="text"
+                                                        placeholder="اسمك"
+                                                        required
+                                                        autocomplete="username"
+                                                        name="name"
+                                                        class="text-feild label-medium"
+                                                    />
+                                                </div>
+
+                                                <div class="col">
+                                                    <input 
+                                                        type="text"
+                                                        placeholder="رقم الهاتف"
+                                                        required
+                                                        name="phone"
+                                                        class="text-feild label-medium"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div class="row row-cols-1 row-cols-lg-2 g-3 g-xl-4">
+                                                <div class="col">
+                                                    <input 
+                                                        type="email"
+                                                        placeholder="عنوان البريد الالكتروني"
+                                                        required
+                                                        autocomplete="email"
+                                                        name="email"
+                                                        class="text-feild label-medium"
+                                                    />
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="select-container position-relative d-inline-block w-100">
+                                                        <select name="nice-select" class="text-feild label-medium">
+                                                            <option value="مناطق الممارسة">مناطق الممارسة</option>
+                                                            <option value="قانون الشركات">قانون الشركات</option>
+                                                            <option value="قانون العقارات">قانون العقارات</option>
+                                                            <option value="قانون التأمين">قانون التأمين</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <textarea 
+                                            name="message" 
+                                            placeholder="اكتب رسالة"
+                                            required
+                                            cols="30"
+                                            rows="10"
+                                            class="textarea my-3 label-medium"
+                                        ></textarea>
+
+                                        <button type="submit" class="btn btn-one text-nowrap z-2 w-100 label-small">
+                                            إرسال الرسالة
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION CUSTOMER -->
+                <section class="customer">
+                    <div class="container">
+                        <div class="title-section text-center" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="sub-title d-flex align-items-center justify-content-center gap-4 label-large">
+                                <span class="line"></span>
+                                أراء العملاء
+                                <span class="line"></span>
+                            </p>
+                            <h2 class="display-small">إيش قالوا عملائي عني</h2>
+                        </div>
+
+                        <div class="position-relative">
+                            <img 
+                                src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                alt="img customer" 
+                                loading="lazy"
+                                class="img-customer index-1 d-none d-md-block position-absolute img-cover"
+                            />
+
+                            <img 
+                                src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                alt="img customer" 
+                                loading="lazy"
+                                class="img-customer index-2 d-none d-md-block position-absolute img-cover"
+                            />
+
+                            <div class="customer-slider carousel slide position-relative mx-auto" id="carouselExampleSlidesOnly" data-bs-ride="carousel">
+                                <div class="customer-container">
+                                    <ul class="carousel-inner customer-inner p-0 m-0">
+                                        <li class="carousel-item active">
+                                            <div class="card-customer d-flex flex-column align-items-center justify-content-center">
+                                                <h2 class="text-center">"ما شاء الله عليه، محامي بمعنى الكلمة، كان داعم لي ولأسرتي في أصعب الأوقات، جزاه الله خير."</h2>
+    
+                                                <div class="card-content d-flex align-items-center">
+                                                    <img 
+                                                        src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                                        alt="img customer" 
+                                                        loading="lazy"
+                                                        class="img-card rounded-pill img-cover"
+                                                    />
+    
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h3>سارة الزهراني</h2>
+                                                        <p class="text-second label-small">طبيبة</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="carousel-item">
+                                            <div class="card-customer d-flex flex-column align-items-center justify-content-center">
+                                                <h2 class="text-center title-medium">"الحمدلله، محامي ما يقصر وفي كل الظروف كان معايا ووقف جنبي، وضح لي كل الأمور بوضوح."</h2>
+    
+                                                <div class="card-content d-flex align-items-center">
+                                                    <img 
+                                                        src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                                        alt="img customer" 
+                                                        loading="lazy"
+                                                        class="img-card rounded-pill img-cover"
+                                                    />
+    
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h3>محمد بن علي</h3>
+                                                        <p class="text-second label-small">رجل أعمال</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="carousel-item">
+                                            <div class="card-customer d-flex flex-column align-items-center justify-content-center">
+                                                <h2 class="text-center title-medium">"والله من أروع المحامين اللي تعاملت معهم، أحترم جهوده وتعبه في قضيتي، ونصحني بكل شيء."</h2>
+    
+                                                <div class="card-content d-flex align-items-center">
+                                                    <img 
+                                                        src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                                        alt="img customer" 
+                                                        loading="lazy"
+                                                        class="img-card rounded-pill img-cover"
+                                                    />
+    
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h3>فاطمة الخليفي</h3>
+                                                        <p class="text-second label-small">مديرة شركة</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="carousel-item">
+                                            <div class="card-customer d-flex flex-column align-items-center justify-content-center">
+                                                <h2 class="text-center title-medium">"يشكر على سرعة استجابته وفهمه للقضية، وكان دوماً يوافيني بأخر التطورات. أنصح فيه."</h2>
+    
+                                                <div class="card-content d-flex align-items-center">
+                                                    <img 
+                                                        src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                                        alt="img customer" 
+                                                        loading="lazy"
+                                                        class="img-card rounded-pill img-cover"
+                                                    />
+    
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h3>عبدالله الهاشمي</h3>
+                                                        <p class="text-second label-small">مهندس</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <img 
+                                src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                alt="img customer" 
+                                loading="lazy"
+                                class="img-customer index-3 d-none d-md-block position-absolute img-cover"
+                            />
+
+                            <img 
+                                src="https://templates.maizny.com/muhamik/assets/images/testimonial/thumb-2.jpg" 
+                                alt="img customer" 
+                                loading="lazy"
+                                class="img-customer index-4 d-none d-md-block position-absolute img-cover"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION BLOG -->
+                <section class="blog">
+                    <div class="container">
+                        <div class="title-section" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="sub-title d-flex align-items-center gap-4 label-large">
+                                <span class="line"></span>
+                                أخبارنا ومدونتنا
+                            </p>
+                            <h2 class="display-small">كل التحديثات الجديدة</h2>
+                        </div>
+
+                        <ul class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 p-0 m-0">
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-blog">
+                                    <img 
+                                        src="https://templates.maizny.com/muhamik/assets/images/blog/blog-4.jpg" 
+                                        alt="الأسس القانونية لحقوق الإنسان في الشريعة الإسلامية"
+                                        loading="lazy" 
+                                        class="img-cover"
+                                    />
+
+                                    <div class="card-body position-relative">
+                                        <span class="bg-main text-bg position-absolute label-small">محامين</span>
+
+                                        <ul class="d-flex align-items-center justify-content-center gap-4 p-0 mx-0 mb-3">
+                                            <li class="d-flex align-items-center gap-2 text-second m-0 label-small">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                                25 يونيو 2021
+                                            </li>
+
+                                            <li class="d-flex align-items-center gap-2 text-second m-0 label-small">
+                                                <i class="fa-solid fa-comments"></i>
+                                                تعليقات (05)
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="title-card text-text mb-2 title-small">
+                                            الأسس القانونية لحقوق الإنسان في الشريعة الإسلامية
+                                        </a>
+
+                                        <a href="#" class="btn btn-card text-second d-flex align-items-center gap-2 border-0 label-small">
+                                            اقرأ المزيد
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-blog">
+                                    <img 
+                                        src="https://templates.maizny.com/muhamik/assets/images/blog/blog-5.jpg" 
+                                        alt="تطبيقات قوانين العمل في الشركات الكبيرة"
+                                        loading="lazy" 
+                                        class="img-cover"
+                                    />
+
+                                    <div class="card-body position-relative">
+                                        <span class="bg-main text-bg position-absolute label-small">محامين</span>
+
+                                        <ul class="d-flex align-items-center justify-content-center gap-4 p-0 mx-0 mb-3">
+                                            <li class="d-flex align-items-center gap-2 text-second m-0 label-small">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                                25 يونيو 2021
+                                            </li>
+
+                                            <li class="d-flex align-items-center gap-2 text-second m-0 label-small">
+                                                <i class="fa-solid fa-comments"></i>
+                                                تعليقات (05)
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="title-card text-text mb-2 title-small">
+                                            تطبيقات قوانين العمل في الشركات الكبيرة
+                                        </a>
+
+                                        <a href="#" class="btn btn-card text-second d-flex align-items-center gap-2 border-0 label-small">
+                                            اقرأ المزيد
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col m-0" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-blog">
+                                    <img 
+                                        src="https://templates.maizny.com/muhamik/assets/images/blog/blog-6.jpg" 
+                                        alt="دور المحامي في حماية حقوق الملكية الفكرية"
+                                        loading="lazy" 
+                                        class="img-cover"
+                                    />
+
+                                    <div class="card-body position-relative">
+                                        <span class="bg-main text-bg position-absolute label-small">محامين</span>
+
+                                        <ul class="d-flex align-items-center justify-content-center gap-4 p-0 mx-0 mb-3">
+                                            <li class="d-flex align-items-center gap-2 text-second m-0 label-small">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                                25 يونيو 2021
+                                            </li>
+
+                                            <li class="d-flex align-items-center gap-2 text-second m-0 label-small">
+                                                <i class="fa-solid fa-comments"></i>
+                                                تعليقات (05)
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="title-card text-text mb-2 title-small">
+                                            دور المحامي في حماية حقوق الملكية الفكرية
+                                        </a>
+
+                                        <a href="#" class="btn btn-card text-second d-flex align-items-center gap-2 border-0 label-small">
+                                            اقرأ المزيد
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="window">
+                    <div class="container">
+                        <div class="card-window row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col" data-aos="fade-down" data-aos-duration="2000">
+                                <h1 class="window-title">عند اختيارك لمكتب المحاماة، اختر أفضل رعاية لنفسك</h1>
+                            </div>
+
+                            <div class="col d-flex flex-wrap align-items-center justify-content-md-end gap-2" data-aos="fade-up" data-aos-duration="2000">
+                                <a href="#" class="btn btn-two text-nowrap label-small">
+                                    تواصل معنا
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+
+                                <a href="#" class="btn btn-two text-nowrap label-small">
+                                    مشاريعنا
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer position-relative">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row row-cols-1 row-cols-lg-2 d-flex flex-lg-row g-4 align-items-lg-center justify-content-lg-between">
+                        <div class="col" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="d-flex flex-column">
+                                <p class="sub-title d-flex align-items-center gap-4 label-large">
+                                    <span class="line"></span>
+                                    ابق على تواصل
+                                </p>
+                                <h2 class="display-small">اشترك في النشرة الإخبارية</h2>
+                            </div>
+                        </div>
+
+                        <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                            <form action="#" class="form-footer">
+                                <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-4">
+                                    <input 
+                                        type="email" 
+                                        placeholder="أدخل عنوان البريد الإلكتروني"
+                                        required
+                                        autocomplete="email"
+                                        name="email"
+                                        class="input-footer label-medium"
+                                    />
+
+                                    <button type="submit" class="btn btn-three text-nowrap label-small">
+                                        اشترك الآن
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4 gy-5 gx-0 gy-xl-0 gx-xl-4">
+                        <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                            <img 
+                                src="https://templates.maizny.com/muhamik/assets/images/logo/logo-2.png" 
+                                alt="مــحامــيــك" 
+                                loading="lazy"
+                                class="img-footer img-cover"
+                            />
+
+                            <p class="description-footer label-small">
+                                تُعتبر شركتنا من بين أبرز الشركات في المجال، حيث نسعى دائمًا لتقديم أفضل الخدمات لعملائنا.
+                            </p>
+
+                            <div class="d-flex flex-column gap-3">
+                                <h3 class="title-medium">تابعنا</h3>
+
+                                <div class="d-flex align-items-center gap-2">
+                                    <a href="#" class="social-link rounded-pill d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+
+                                    <a href="#" class="social-link rounded-pill d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="social-link rounded-pill d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-behance"></i>
+                                    </a>
+
+                                    <a href="#" class="social-link rounded-pill d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                            <h2 class="title-footer title-medium">القضايا الشهيرة</h2>
+
+                            <ul class="d-flex flex-column gap-4 p-0 m-0">
+                                <li>
+                                    <a href="#" class="footer-link d-flex align-items-center gap-3 label-small">
+                                        <i class="fa-solid fa-circle"></i>
+                                        العنف الأسري
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link d-flex align-items-center gap-3 label-small">
+                                        <i class="fa-solid fa-circle"></i>
+                                        القانون التجاري
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link d-flex align-items-center gap-3 label-small">
+                                        <i class="fa-solid fa-circle"></i>
+                                        اتفاقيات قبل الزواج
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link d-flex align-items-center gap-3 label-small">
+                                        <i class="fa-solid fa-circle"></i>
+                                        تسويات المحكمة
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link d-flex align-items-center gap-3 label-small">
+                                        <i class="fa-solid fa-circle"></i>
+                                        قانون حوادث السيارات
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link d-flex align-items-center gap-3 label-small">
+                                        <i class="fa-solid fa-circle"></i>
+                                        الإصابات الشخصية
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                            <h2 class="title-footer title-medium">آخر الأخبار</h2>
+
+                            <ul class="d-flex flex-column gap-3 p-0 m-0">
+                                <li class="card-footer d-flex align-items-start gap-3">
+                                    <img 
+                                        src="https://templates.maizny.com/muhamik/assets/images/blog/blog-4.jpg" 
+                                        alt="استيراد البيانات بسلاسة" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <div class="d-flex flex-column gap-1">
+                                        <a href="#">استيراد البيانات بسلاسة</a>
+                                        <p class="d-flex align-items-center gap-3">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            25 مايو 2023
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="card-footer d-flex align-items-start gap-3">
+                                    <img 
+                                        src="https://templates.maizny.com/muhamik/assets/images/blog/blog-6.jpg" 
+                                        alt="العمل في بيئة رقمية" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <div class="d-flex flex-column gap-1">
+                                        <a href="#">العمل في بيئة رقمية</a>
+                                        <p class="d-flex align-items-center gap-3">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            25 مايو 2023
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="card-footer d-flex align-items-start gap-3">
+                                    <img 
+                                        src="https://templates.maizny.com/muhamik/assets/images/blog/blog-5.jpg" 
+                                        alt="تحسين تجربة الموقع" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <div class="d-flex flex-column gap-1">
+                                        <a href="#">تحسين تجربة الموقع</a>
+                                        <p class="d-flex align-items-center gap-3">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            25 مايو 2023
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                            <h2 class="title-footer title-medium">تواصل معنا</h2>
+
+                            <div class="footer-contact d-flex flex-column gap-3">
+                                <ul class="d-flex flex-column gap-4 p-0 m-0">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="footer-link label-small">
+                                            +966128967459
+                                        </a>
+                                        <i class="fa-solid fa-phone-flip || text-main label-medium"></i>
+                                    </li>
+
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="footer-link label-small">
+                                            name@gmail.com
+                                        </a>
+                                        <i class="fa-solid fa-envelope || text-main label-medium"></i>
+                                    </li>
+
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <p class="label-small">شارع الملك فهد - الرياض - السعودية</p>
+                                        <i class="fa-solid fa-location-dot || text-main label-medium"></i>
+                                    </li>
+                                </ul>
+
+                                <div class="d-flex flex-column gap-3">
+                                    <h3 class="title-medium">تابعنا</h3>
+    
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="label-small">الأحد - الجمعة<br /> 09 صباحًا - 08 مساءً</p>
+                                        <i class="fa-solid fa-clock || text-main label-medium"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom mb-4">
+                    <p class="text-center label-small">تم التطوير بواسطة الفنان علي شبكه الانترنت - جميع الحقوق محفوظة © 2024</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BACK TOP BTN -->
+        <a href="#up" class="back-top-bottom border-0 text-bg bg-main d-flex align-items-center justify-content-center rounded-pill position-fixed z-2 label-medium" data-back-top-btn>
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        
+        <!-- custom bootstrap bundle min js link -->
+        <script src="./src/assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- custom js link -->
+        <script src="./src/script.js"></script>
+        <!-- custom aos js link -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
