@@ -13,11 +13,12 @@
       <br>CSS3
     </td>
   </tr>
+
+  <tr>
     <td align="center" height="150" width="150">
       <img src="./skills/bootstrap.png" alt="Bootstrap" width="60" height="60"/>
       <br>Bootstrap
     </td>
-  <tr>
     <td align="center" height="150" width="150">
       <img src="./skills/javaScript.png" alt="JavaScript" width="60" height="60"/>
       <br>JavaScript
